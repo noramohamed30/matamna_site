@@ -18,3 +18,4 @@ RUN useradd -G www-data,root -u $uid -d /home/$user $user && \
 WORKDIR /var/www
 
 USER $user
+CMD [ "php" "artisan serve" ]
